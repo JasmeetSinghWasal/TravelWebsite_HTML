@@ -1,0 +1,175 @@
+
+/* Navigation */
+#myTopNav {
+  background-image: url(http://cdn.cnn.com/cnnnext/dam/assets/160614151738-alacarte--4.jpg);
+  height: 60%;
+  /* height:100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+body{
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+}
+
+p, a {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+.fooodVisitWebsiteBtn {
+  background-color: goldenrod;
+  text-decoration: none;
+  color: white;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+.fooodVisitWebsiteBtn :hover {
+  opacity: .6;
+}
+
+/* Styles for the hero image */
+.hero {
+  /* Photo by mnm.all on Unsplash */
+  background-image: url("../images/dubai-street-food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* padding: 4rem 2rem; */
+  padding:6%;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+
+.hero > * {
+  color: #000;
+  text-align: justify;
+}
+
+.hero > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.hero > article > p {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+.hero > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* food styles */
+.food {
+  padding: 2rem;
+}
+
+.food > ul {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+  padding-left: 0;
+}
+
+.food > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+  list-style-type: none;
+  
+}
+
+.food > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.food > ul > li > figure > img {
+  
+  width: 100%;
+}
+
+.food > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(91, 88, 88, 0.7);
+  width: 100%;
+}
+
+.food > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.food > ul > li > p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.food > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+
+  /* media queary for the responsive */
+  @media (max-width: 700px) {
+
+    .hero > * {
+      padding-right: 0%;
+      color: #000;
+      text-align: justify;
+    }
+    
+    .hero > h1 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+    
+    .hero > article > p {
+      font-size: 1.5rem;
+      font-weight: 200;
+    }
+    
+    .hero > article > a {
+      padding: 1rem;
+      margin-top: .75rem;
+    }
+    .food > ul {
+      display: grid;
+      /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+      grid-template-columns: auto;
+      grid-gap: 1rem;
+      padding-left: 0;
+    }
+  }

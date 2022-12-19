@@ -1,0 +1,271 @@
+
+/* 
+-- Please dont make changes without informing.
+-- Will be a problem while integrating 
+-- Try using as much classes as possible
+*/
+
+
+/* ------------------------- Applying page Resets  ------------------------- */
+body {
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bodyContent {
+  font-size: 20px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+footer {
+  background-color: #212121;
+  color: white;
+  padding: 1%;
+  text-align: center;
+}
+
+/* Fonts */
+
+.font-HelveticaNeue {
+  font-family: "Helvetica Neue", sans-serif;
+}
+.font-Playfair {
+  font-family: "Playfair Display";
+}
+
+/*  ------------------------- Top Bar for cimmunication and follow on social media -------------------------  */
+#followUsTopBar {
+  height: 35px;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+#followUsContainer {
+  margin-left: 120px;
+  margin-right: 120px;
+  padding-top: 7px;
+}
+#followUsContainer i {
+  padding-left: 10px;
+}
+#followUsPhone {
+  margin-left: 30px;
+}
+#followUsLogin {
+  float: right;
+  text-transform: none;
+}
+
+
+/*  ------------------------- Navigation bar ------------------------- */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #FFF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  letter-spacing: 3px;
+  
+}
+
+.topnav a:hover {
+  background-color: #e8fffd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #facc48;
+  color: #212121;
+  margin-right: 15%;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#navContent {
+  z-index: 1;
+  position: relative;
+}
+
+
+/*  ------------------------- Font sizes -------------------------  */
+
+.txt-60 {
+  font-size: 60px;
+}
+
+.txt-80 {
+  font-size: 80px;
+}
+.txt-40 {
+  font-size: 40px;
+}
+.txt-45 {
+  font-size: 45px;
+}
+.txt-34 {
+  font-size: 34px;
+}
+.txt-25 {
+  font-size: 25px;
+}
+.txt-20 {
+  font-size: 20px;
+}
+
+/*  ------------------------- Letter spacing -------------------------  */
+
+.ltr-spacing-2 {
+  letter-spacing: 2px;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+/*  ------------------------- Padding -------------------------   */
+
+.pad-btm-5 {
+  padding-bottom: 5px;
+}
+.pad-5 {
+  padding: 5px;
+}
+
+.pad-top-5 {
+  padding-top: 5%;
+}
+.pad-top-1 {
+  padding-top: 1%;
+}
+
+.mrg-btm-5 {
+  margin-bottom: 5%;
+}
+
+.anchor-btn-no-underline {
+  text-decoration: none;
+}
+
+/*  ------------------------- To center -------------------------  */
+
+.alignCenter {
+  display: flex;
+  justify-content: center;
+}
+
+/*  ------------------------- Generic yellow buttons -------------------------  */
+
+.btnGenericYellow {
+  color: #212121;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: #fbcc05;
+  border-radius: 5px;
+  padding: 14px 40px;
+  margin-top: 5%;
+  border: none;
+}
+
+.btnGenericYellowPd2 {
+  color: #212121;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  background-color: #fbcc05;
+  border-radius: 5px;
+  padding: 14px 40px;
+  border: none;
+}
+
+/*  ------------------------- Generic media queries for above  ------------------------- */
+
+@media screen and (max-width: 600px) {
+  #followUsTopBar {
+    display: none;
+  }
+  #myTopNav {
+    /* height: 60%; */
+    max-height: 45rem;
+  }
+  .txt-40{
+    font-size: 26px;
+  }
+  .txt-34{
+    font-size: 22px;
+  }
+  .txt-25 {
+    font-size: 25px;
+  }
+  .txt-60 {
+    font-size: 60px;
+  }
+  .navBg {
+    background-color: #000;
+  }
+
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+  }
+  #bannerText {
+    font-size: 37px;
+    position: absolute;
+    color: white;
+    top: 19%;
+    width: 75%;
+    text-align: center;
+    margin-left: 15%;
+  }
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #754ecaaa; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #fbcc05; /* Add a dark-grey background on hover */
+  color: #000;
+}

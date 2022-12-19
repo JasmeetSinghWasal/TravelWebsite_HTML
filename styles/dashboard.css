@@ -1,0 +1,400 @@
+#bannerImg {
+  background-image: url("../images/banner/dashboard_banner.webp");
+  height: 100%;
+  background-position: center;
+  object-fit: contain;
+  
+}
+
+#bannerText {
+    position: absolute;
+    color: #FFFFFF;
+    top: 28%;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    font-family: "Playfair Display";
+    letter-spacing: 3px;
+    text-shadow: 2px 2px #000000;
+}
+
+#btnExlpore:hover {
+  background-color: #303030;
+  color: #ffffff;
+}
+
+#bannerFilter {
+  width: 43%;
+  height: 27%;
+  position: absolute;
+  border: 1px solid blue;
+  top: 80%;
+  left: 32%;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Animation for Dashboard Explore btn at banner */
+.dashboardBtnExplore
+{
+  -webkit-animation: bounce 1s infinite alternate;
+  -moz-animation: bounce 1s infinite alternate;
+  animation: bounce 1s infinite alternate;
+}
+
+
+@-webkit-keyframes bounce {
+  to { -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes bounce {
+  to { -moz-transform: scale(1.2); }
+}
+@keyframes bounce {
+  to { transform: scale(1.2); }
+}
+
+
+/* Animation for Dashboard Explore things to do button at bottom */
+
+.dashboardExploreThingsToDoBtn
+{
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+}
+@keyframes pulse {
+  0%, 100% {
+    letter-spacing: 3px;
+    color: black;
+  }
+  50% {
+letter-spacing: 15px;
+    color: white;
+  }
+}
+
+
+
+#afterBannerContainer {
+  /* width:65%; */
+     padding: 5%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#meditateImg {
+  width: 70%;
+  border-radius: 54%;
+}
+
+#afterBannerText {
+  font-size: 20px;
+  text-align: justify;
+  margin-left: 5%;
+}
+
+#afterBannerImg {
+  width: 100%;
+}
+
+.greyText {
+  color: #212121;
+  letter-spacing: 1px;
+  text-align: justify;
+}
+
+.txt-banner {
+  font-size: 40px;
+  /* height: 100%; */
+}
+
+#sportCards {
+  display: inline-grid;
+  justify-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 5rem;
+  width: 100%;
+}
+
+#sportCard2 {
+}
+
+.sport-Card {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+
+.overlay-card-text-Light {
+  position: absolute;
+  top: 0px;
+  /* left: 43px; */
+  /* font-size: 40px; */
+  color: #ffffff;
+  background-color: #f9cc48;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.overlay-card-text-Dark {
+  position: absolute;
+  top: 0px;
+  /* left: 43px; */
+  /* font-size: 40px; */
+  color: #ffffff;
+  background-color: #818181;
+  padding: 5px;
+}
+
+.cardImg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: 90%;
+  object-fit: none;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border-radius: 5px;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+#sportHead {
+  display: grid;
+  justify-content: center;
+  padding-bottom: 3%;
+  font-size: 45px;
+}
+.sport-Card:hover .cardImg {
+  opacity: 0.3;
+}
+
+.sport-Card:hover .middle {
+  opacity: 1;
+}
+.cardTxtBlk {
+  color: #212121;
+}
+.text {
+  background-color: #04aa6d;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.border-btm {
+  /* border-bottom: 1px solid #212121;
+  padding-top: 1%; */
+}
+
+#newsLetterSection {
+  background-color: #393939;
+  padding: 2% 5% 2% 5%;
+}
+
+#newsletterHead {
+  display: grid;
+  /* margin: auto; */
+  justify-content: center;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+#newsletterContainer {
+  background-color: #010b13;
+  height: 20%;
+}
+
+.input-field {
+  box-sizing: border-box;
+
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+
+  border-radius: 3px;
+
+  padding: 7px;
+  outline: none;
+  margin-right: 3%;
+  width: 300px;
+}
+
+.lblNewsletter {
+  color: #ffffff;
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 2%;
+  letter-spacing: 2px;
+}
+
+.form-style-1 {
+  padding: 10px 12px 10px 20px;
+  font: 13px Arial, Helvetica, sans-serif;
+  justify-content: center;
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+}
+#newsletterTxt {
+  color: #ffffff;
+  /* margin: auto; */
+  justify-content: center;
+  padding-top: 3%;
+}
+#newsletterTxt::before {
+  content: "** ";
+}
+#newsletterTxt::after {
+  content: " **";
+}
+.ttdCenter {
+  display: flex;
+  text-align: center;
+}
+#ttdGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap : 3rem;
+  padding: 5% 5% 1% 5%;
+
+  /* margin-bottom: 2%; */
+  /* justify-content: ; */
+}
+.ttdCards {
+  display: grid;
+  grid-template-columns: auto; 
+  grid-template-rows:auto auto;
+  box-sizing: border-box;
+
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 1px 4px #ebebeb;
+
+  border-radius: 3px;
+  padding: 2%;
+}
+.ttdCards img{
+  width:100%;
+  /* height: 100%; */
+}
+.ttdContent {
+  padding-left: 3%;
+  /* letter-spacing: 3px; */
+  font-size: 20px;
+  justify-content: center;
+}
+.alignCaption {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+
+  #myTopNav{
+    height:35rem;
+  }
+  .pdadAfterBnrPding {
+    /* padding-left: 8%; */
+  }
+  .input-field {
+    width: 100%;
+  }
+  #ttdGrid {
+    grid-column-gap : 5rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-row-gap:2rem;
+  }
+  .ttdCards {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto ;
+  }
+  #sportHead {
+    justify-content: center;
+    font-size: 30px;
+    padding-left: 22px;
+    padding-right: 20px;
+  }
+  .form-style-1 {
+  }
+
+  #afterBannerContainer {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  .txt-banner {
+    font-size: 30px;
+  }
+
+  #sportCards {
+    display: inline-grid;
+    justify-content: space-evenly;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    /* grid-row-gap: 5rem; */
+    width: 100%;
+  }
+
+  #afterBannerText {
+    margin-left: 0%;
+  }
+
+  #newsletterHead {
+    font-size: 28px;
+  }
+
+  #newsLetterSection {
+    margin: 0px;
+    color: #ffffff;
+  }
+  .lblNewsletter {
+    color: #ffffff;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 2%;
+    letter-spacing: 2px;
+  }
+  #afterBannerImg {
+    width: 100%;
+    text-align: center;
+  }
+
+  .form-style-1 {
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+    justify-content: center;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.dashboardExploreThingsToDoBtn
+{
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+}
+@keyframes pulse {
+  0%, 100% {
+    letter-spacing: 2px;
+    color: black;
+  }
+  50% {
+letter-spacing: 8px;
+    color: white;
+  }
+}
+
+
+}
+
